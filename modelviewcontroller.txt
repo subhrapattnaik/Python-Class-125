@@ -1,0 +1,60 @@
+create an API with the POST request
+
+create a classifier model
+
+send data through the API to the classifier to make predictions
+
+----------------------------------------
+
+last class:
+
+we created an API
+added data to API using post request
+---------
+
+before 
+
+we have created multiple prediction models and provided data in various ways
+
+Today we are going to do one more such thing where we pass data through the API
+that we create and then see how well our prediction model performs
+
+-----------------------------------------------------
+
+steps:
+
+1.import all the dependancies/libraries
+2.get the data to train and test the model
+3.split the data to train and test the model
+4.scale the data to make it of equal size
+5.fit the data into logistic regression model
+6.make predictions
+---------------------------
+Today we will be providing the data through the API
+
+--------
+
+mnsit data,version 1, getting x and y values of it
+
+Now we need to scale the data,to make sure the data points in X and Y are equal
+so we will divide them using 255,which is the maximum pixel of the image.
+
+
+--after scaling the data, fit the data into our model
+
+
+now, the classifier is ready.using the classifier,if we have an image,we can predict the digit mentioned 
+on the image
+
+get_prediction()
+will take the image as parameter and make prediction
+
+take the image
+convert it into a scalar quantity
+make it grey,so that colors dont affect the prediction
+resize it into 28 by 28 scales
+use the percentile function to get the minimum pixel
+use clip function to give each image a number
+then get the maximum pixel and make an array of this
+
+create a test sample of itand make predictions based on that samplefinally return the test prediction
