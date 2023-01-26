@@ -1,5 +1,8 @@
 # Python-Class-125
 
+Pip3 install -U scikit-learn
+
+
 https://realpython.com/the-model-view-controller-mvc-paradigm-summarized-with-legos/
 
 A user requests to view a page by entering a URL.
